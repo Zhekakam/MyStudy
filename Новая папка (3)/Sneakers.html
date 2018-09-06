@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="eng">
+<head>
+<title>Sneakers</title>
+<meta charset="UTF-8"> 
+<style>    
+.body{
+    display: flex;
+    flex-direction: column;
+ }
+ .Nav{
+    background-color: black;
+    width:100vw; height: 10vh;
+     display:flex;
+     justify-content:space-around;
+     align-items: center;
+ }
+ .chapter{ color: white;}
+ .Title{
+     background-image: url(sneak.jpg);
+     width:96vw; height:50vh;
+     background-size:100% 100%;
+     padding-left:50px;
+     padding-top:100px; 
+}
+@media only screen and (max-device-width:600px){
+    .Title{
+     background-image: url(sneak.jpg);
+     width:96vw; height:20vh;
+     background-size:100% 100%;
+     padding-left:50px;
+     padding-top:100px; 
+}}
+.Information{background-color: rgba(11, 11, 80, 1);
+            color: aliceblue;
+            font-size: 150%;
+            width:100vw; height:50vh;
+}
+@media only screen and (max-device-width:600px){    
+    .Information{background-color: rgb(40, 40, 82);
+            color: aliceblue;
+            font-size: 150%;
+            width:100vw; height:70vh;}}
+p{
+    margin-left:50px;
+    margin-right:50px;
+    margin-top: 0%;
+    padding-top: 50px;
+}
+.COLORS{
+    display: flex;
+    justify-content:space-between;
+    margin-left:75px;
+    margin-right:75px;
+}
+</style>
+</head>
+<body>
+   <div class="Nav">
+       <span class="chapter">MEN</span>  <span class="chapter">WOMEN</span> <span class="chapter">BOYS</span> <span class="chapter">GIRLS</span>
+    </div>  
+    <div class="Title">
+        <font size="10" color="silver" face="Arial"><strong>PEGASUS 35 iD</strong></font> 
+    </div>
+    <div class="Information"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was 
+          popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+           software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        </div>
+        <div class="COLORS">
+            <div class="option"><h1>COLOURS<h1></div> 
+            <div class="option"><img src="sneak.jpg" width=250 height=100></div> 
+            <div class="option"><img src="sneak.jpg" width=250 height=100></div> 
+            <div class="option"><img src="sneak.jpg" width=250 height=100></div> 
+        </div>
+        
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.picture{
+      width: 98vw;
+      margin-top: 10%;
+  }
+  .picture__img{
+      width: 99vw;
+      margin-left: -1vw; 
+  }
+  .title{
+      margin-top: 10px;
+  }
+  .title__inside{
+      font-size:35px; 
+      font-weight: 900;
+  }
+  .buttons{
+      width: 50vw;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      padding-left:10px; 
+  }
+  .buttons__back{
+      border-radius: 10px;
+      background-color: white;
+      padding: 2%;
+  }
+  .text{
+      font-size: 18px;
+      color: rgb(94, 97, 95);
+      text-align:justify;
+      margin-top: 15px;
+  }
+  .gallery{
+      margin-top: 10px;
+  }
+  .gallery__title{
+      font-size: 25px; 
+      font-weight:900;
+    }
+    .photos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .photos__container1{
+        width:30%; height:50%; 
+    }
+    .photos__container-img1{
+        width:70%; height: 80%;
+    }
+    .photos__container2{
+        width:30%; height:35%;
+
+    }
+    .photos__container-img2{
+        width:50%; height: 10%;
+    }

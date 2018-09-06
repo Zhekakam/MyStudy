@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="eng">
+<head>
+<title>class</title>
+<meta charset="UTF-8">
+<style>
+    .container1{ 
+        background-color: rgba(243, 114, 9, 0.986);
+        margin: -10px;
+        width:100vw;        }
+    .container1__greeting-title{
+        margin-left: 30px;
+        padding-top: 10vw;
+        }
+    .greeting-title-text{
+        color: white;
+        font-size: 60px;
+        font-weight: 900;
+    }
+    .smile{width:60px; height: 60px;}
+    .container1__text{
+        padding-top:30px;
+        margin-left: 30px;
+        color: white;
+        font-size: 40px;
+        width: 82vw;
+        text-align: left;
+        margin-bottom: 15vw;
+    }
+    .container1__people-title{
+        margin-left: 30px;
+        color: rgba(207, 201, 201, 0.5);
+        font-size: 40px;
+
+    }
+    .container1__people{
+        margin-left: 30px;
+        display: grid;
+        grid-template-rows: 90px;
+        grid-template-columns: repeat(5, 15%);
+        margin-bottom: 15%;
+    }
+    .people__avatar{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+    }
+    .people__avatar-img{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+    .container1__conversations-title{
+        margin-left: 30px;
+        color: rgba(207, 201, 201, 0.5);
+        font-size: 40px; 
+    }
+    .container1__conversations{
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+        display: grid;
+        grid-template-rows: 35vh;
+        grid-template-columns: repeat(2, 35%);
+    }
+    .conversations__text1{
+        width:30vw; height: 16vh;
+        background-color: rgba(233, 227, 222, 0.2);
+        border-radius: 10px;
+        color: white;
+        font-size: 25px;
+        padding-top:8%; padding-bottom:8%;
+        padding-left: 5%;padding-right: 5%; 
+    }
+    .conversations__text2{
+        width:30vw; height: 16vh;
+        background-color: rgba(233, 227, 222, 0.2);
+        border-radius: 10px;
+        color: white;
+        font-size: 25px;
+        padding-top:8%; padding-bottom: 8%;
+        padding-left: 5%;padding-right: 5%;
+        margin-left: 15%; 
+    }
+    .conversations__avatar-container1{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        top: -50%;
+    }
+    .conversations__avatar-img1{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+    .conversations__avatar-container2{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        position: relative;
+        top: -50%;
+    }
+    .conversations__avatar-img2{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+    .container2{
+        width: 100vw;
+        margin: -10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .container2__start{
+        width: 85vw; height: 5vh;
+        padding: 20px;
+        font-size: 25px;
+        color: rgba(207, 201, 201, 0.5);
+    }
+    .container2__label1{
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        margin: 20px;
+    }
+    .label1-img{
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+    .container2__label2{
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        margin: 20px;
+        margin-left: 5px;
+    }
+    .label2-img{
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+
+    }
+
+</style> 
+</head>
+<body>
+    <div class="container1">
+        <div class="container1__greeting-title">
+            <span class="greeting-title-text">Hello!</span> 
+            <img class="smile" src="file:///C:/Users/zhenya/Desktop/messenger/happy.svg" alt="Smile!">
+        </div>
+        <div class="container1__text">
+            Welcome to ConvertFox.Let's chat - start a new conversation below.
+        </div>
+        <span class="container1__people-title">ACTIVE AGENTS</span>
+        <div class="container1__people">
+           <div class="people__avatar"> 
+            <img class="people__avatar-img" src="C:\Users\zhenya\Desktop\messenger\575ff5d2ca7f8.jpeg" alt="Face"> 
+            </div>
+            <div class="people__avatar">  
+            <img class="people__avatar-img" src="C:\Users\zhenya\Desktop\messenger\575ff5d2ca7f8.jpeg" alt="Face">
+            </div>
+            <div class="people__avatar">
+            <img class="people__avatar-img" src="C:\Users\zhenya\Desktop\messenger\575ff5d2ca7f8.jpeg" alt="Face">
+            </div>
+            <div class="people__avatar">
+            <img class="people__avatar-img" src="C:\Users\zhenya\Desktop\messenger\575ff5d2ca7f8.jpeg" alt="Face">
+            </div>
+            <div class="people__avatar">
+            <img class="people__avatar-img" src="C:\Users\zhenya\Desktop\messenger\575ff5d2ca7f8.jpeg" alt="Face">   
+            </div>
+        </div>
+        <span class="container1__conversations-title">RECENT CONVERSATIONS</span>
+        <div class="container1__conversations">
+            
+            <div class="conversations__text1">
+                <div class="conversations__avatar-container1">
+                <img class="conversations__avatar-img1" src="C:\Users\zhenya\Desktop\messenger\575ff5d2ca7f8.jpeg" alt="Face">
+            </div>Blalalalalal</div>
+            
+            <div class="conversations__text2">
+                <div class="conversations__avatar-container2">
+                    <img class="conversations__avatar-img2" src="C:\Users\zhenya\Desktop\messenger\575ff5d2ca7f8.jpeg" alt="Face">
+            </div>Blalalalalal</div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="container2__start">
+            Start a conversation
+        </div>
+        <div class="container2__label1">
+            <img class="label1-img" src="file:///C:/Users/zhenya/Desktop/messenger/folder%20(1).svg">
+        </div>
+        <div class="container2__label2">
+            <img class="label2-img" src="file:///C:/Users/zhenya/Desktop/messenger/happy.svg">
+        </div>
+    </div>
+    
+        
+
+</body>
+
+</html>

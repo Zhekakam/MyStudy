@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="eng">
+<head>
+<title>Basket</title>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+<style>
+    body{background-color: black;}
+    .header{height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(43, 41, 41);
+    }
+    .header__container{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20vw;
+    margin-left: 5vw;
+    }
+    .container__label{background-color: gray;
+    height: 40px; width:40px;
+    border-radius: 50%;
+    }
+    .label{
+        height: 40px; width:40px;
+        object-fit: cover;
+    }
+    .header__en{font-size: 30px;
+        color: gray;}
+    .header__ru{font-size: 30px;
+        color: gray;}
+    .underheader{ height: 12vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;}
+    .underheader__name{margin-left: -3vw;
+        margin-top: 5px;
+        color: white;
+        font-family: 'Ruslan Display', bold;
+        font-size: 50px;}
+    .underheader__wrapper{width:40vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;}
+    .wrapper__button{color: grey;
+        background-color: black;
+        font-size: 25px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border: 0px;
+    }
+    .wrapper__button:hover{color: red;
+    border-bottom: 3px red solid;}
+    .underheader__signs{display: flex;
+        flex-direction: row;
+    }
+    .signs__signin{
+        color: white;
+        font-size: 25px;
+        margin-top: 15px;}
+    .signs__signup{
+        height: 30px;width:100px;
+        background-color: red;
+        margin-top: 12px;
+        margin-left:8px;
+        border: 0px;
+        border-radius: 5vw;
+        font-size: 23px;
+        color: white;
+        }
+    .basket-img{height: 90vh; width: 90vw;}
+    .basket-text{color: white;}
+</style> 
+</head>
+<body>
+        <div class="header">
+                <div class="header__container">
+                    <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\twitter-logo-button (1).svg"></div>
+                    <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\instagram-logo (1).svg"></div>
+                    <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\facebook-logo-button (1).svg"></div>
+                    <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\google-plus-logo-button (1).svg"></div>
+                    <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\whatsapp (1).svg"></div>
+            </div>
+               <form method="post" action="">
+                <span class="header__en">EN</span>
+                    <input type="checkbox">                                <!--КАк сделать переключатель????-->
+                <span class="header__ru">RU</span>
+                </form>
+            </div>
+            <div class="underheader">
+                <span class="underheader__name">ALASKA</span>
+                <div class="underheader__wrapper">
+                    <form action="C:\Users\zhenya\Desktop\Итоговый проект\Main page.html">
+                    <button class="wrapper__button">Home</button>
+                    </form>
+                    <form action="C:\Users\zhenya\Desktop\Итоговый проект\About US.html">
+                    <button class="wrapper__button">About Us</button>
+                    </form>
+                    <form action="C:\Users\zhenya\Desktop\Итоговый проект\Our team.html">
+                    <button class="wrapper__button" type="submit">Team</button>
+                    </form>
+                    <form action="C:\Users\zhenya\Desktop\Итоговый проект\Catalog.html">
+                    <button class="wrapper__button">Our Blog</button>
+                    </form>
+                    <form action="C:\Users\zhenya\Desktop\Итоговый проект\Contacts.html">
+                    <button class="wrapper__button">Contacts</button>
+                    </form>
+                </div>
+                <div class="underheader__signs">
+                <div class="signs__signin">Sign In</div>
+                <button class="signs__signup">Sign Up</button>
+                </div>
+            </div>
+            <div class="basket-text">Here must be a busket, but I didn't find enough time to learn how to make it and now is late, so</div>
+            <img class="basket-img" src="https://www.sustainlife.org/wp-content/uploads/2017/01/melon_basket_hb-300.jpg">
+  
+</body>
+
+</html>

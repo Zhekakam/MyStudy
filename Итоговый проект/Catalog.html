@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="eng">
+<head>
+<title>Our blog</title>
+<meta charset="UTF-8">
+<script src="C:\Users\zhenya\Desktop\Итоговый проект\JS для каталога.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+<style>
+    body{background-color: black;}
+    .header{height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(43, 41, 41);
+    }
+    .header__container{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20vw;
+    margin-left: 5vw;
+    }
+    .container__label{background-color: gray;
+    height: 40px; width:40px;
+    border-radius: 50%;
+    }
+    .label{
+        height: 40px; width:40px;
+        object-fit: cover;
+    }
+    .header__en{font-size: 30px;
+        color: gray;}
+    .header__ru{font-size: 30px;
+        color: gray;}
+    .underheader{ height: 12vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;}
+    .underheader__name{margin-left: -3vw;
+        margin-top: 5px;
+        color: white;
+        font-family: 'Ruslan Display', bold;
+        font-size: 50px;}
+    .underheader__wrapper{width:40vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;}
+    .wrapper__button{color: grey;
+        background-color: black;
+        font-size: 25px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border: 0px;
+    }
+    .wrapper__button:hover{color: red;
+    border-bottom: 3px red solid;}
+    .underheader__signs{display: flex;
+        flex-direction: row;
+    }
+    .signs__signin{
+        color: white;
+        font-size: 25px;
+        margin-top: 15px;}
+    .signs__signup{
+        height: 30px;width:100px;
+        background-color: red;
+        margin-top: 12px;
+        margin-left:8px;
+        border: 0px;
+        border-radius: 5vw;
+        font-size: 23px;
+        color: white;
+        }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto-fill, 50vw); 
+        padding-left:1vw;
+    }
+    .footer__photo{
+        width: 45vw; height: 55vw;
+        border: 1px rgb(107, 101, 101) solid;
+        overflow: hidden; 
+    }
+    .footer__photo-img{
+        width: 45vw; height: 40vw;
+        object-fit: cover;
+    }
+    
+    .sheet1{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet2{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet3{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet4{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet5{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet6{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet7{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet8{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet9{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet10{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet11{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet12{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet13{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet14{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet15{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet16{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet17{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet18{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .sheet19{
+        width: 45vw; height: 40vw;
+        opacity: 1;
+        position: relative;
+        bottom: 50vw;
+    }
+    .cost{
+        color: white;
+        font-size: 400%;
+        font-weight: 400;
+        margin-left: 5px;
+    }
+    .Buy{
+        background-color: rgb(182, 69, 69);
+        color: white;
+        width: 15%;height: 50px;
+        border:0px;
+        margin-left: 80%;
+        font-size: 150%;
+        border-radius: 50%;
+        
+    }  
+</style> 
+</head>
+<body>
+    <div class="header">
+        <div class="header__container">
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\twitter-logo-button (1).svg"></div>
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\instagram-logo (1).svg"></div>
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\facebook-logo-button (1).svg"></div>
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\google-plus-logo-button (1).svg"></div>
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\whatsapp (1).svg"></div>
+    </div>
+       <form method="post" action="">
+        <span class="header__en">EN</span>
+            <input type="checkbox">                                <!--КАк сделать переключатель????-->
+        <span class="header__ru">RU</span>
+        </form>
+    </div>
+    <div class="underheader">
+        <span class="underheader__name">ALASKA</span>
+        <div class="underheader__wrapper">
+            <form action="C:\Users\zhenya\Desktop\Итоговый проект\Main page.html">
+                <button class="wrapper__button">Home</button>
+                </form>
+                <form action="C:\Users\zhenya\Desktop\Итоговый проект\About US.html">
+                <button class="wrapper__button">About Us</button>
+                </form>
+                <form action="C:\Users\zhenya\Desktop\Итоговый проект\Our team.html">
+                <button class="wrapper__button" type="submit">Team</button>
+                </form>
+                <form action="C:\Users\zhenya\Desktop\Итоговый проект\Catalog.html">
+                <button class="wrapper__button">Our Blog</button>
+                </form>
+                <form action="C:\Users\zhenya\Desktop\Итоговый проект\Contacts.html">
+                <button class="wrapper__button">Contacts</button>
+                </form>
+        </div>
+        <div class="underheader__signs">
+        <div class="signs__signin">Sign In</div>
+        <button class="signs__signup">Sign Up</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\562A6982-3.jpg"> <span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1.html"><button class="Buy">Watch</button></form> <form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet1" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\80472fa866c28387f301ceaf0a42080e-alaska.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия.html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet2" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\alaska.png"><span class="cost">1$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (3).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet3" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\Alaska_966x442_alamyexp1019.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (4).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\Alaska_Railroad_train_to_Spencer_Glacier.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (5).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\Alaska8_Web72DPI_2.jpg"><span class="cost">5$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (6).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet5" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\alaska-cruise.ngsversion.1511367265148.adapt.1900.1.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (7).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet6" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\alaska-multisport-tour.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (8).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet7" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\anchorage+skyline.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (9).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet8" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\CaribouDenali.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet9" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\Clouds-Sky-Denali-National-Park-Alaska-Mountains-1733313.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (11).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet10" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\KATMAI0606100126-1024x682.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (12).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet11" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\northern-lights-alaska-4.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (13).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet12" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\original_ALASKA_banner.jpg"><span class="cost">3$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (14).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet13" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\PX-Alaska-National-Parks-Escorted-Tour-Day5.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (15).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet14" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\shutterstock_5794634622.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (16).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet15" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\traveltips1.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (17).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet16" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\USA Alaska McCarthy Worthington Glacier - DJI0130 Lg RGB.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (18).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet17" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\xDereks-Memorial-Day-shot.jpg.pagespeed.ic.XSOW_mbhWR.jpg"><span class="cost">2$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (19).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet18" onclick="myFunction()"></div> </div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\Аляска фото на продажу\cruise-alaska-whale-fluke-xxl.jpg"><span class="cost">3$</span><form action="C:\Users\zhenya\Desktop\Итоговый проект\Полное изображение1 — копия (20).html"><button class="Buy">Watch</button></form><form action="C:\Users\zhenya\Desktop\Итоговый проект\Basket.html"><button class="Buy">Buy</button></form><div class="sheet19" onclick="myFunction()"></div> </div>
+    </div>
+</body>
+
+</html>

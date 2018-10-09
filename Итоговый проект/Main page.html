@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="eng">
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+<style>
+    body{background-color: black;}
+    .header{height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(43, 41, 41);
+    }
+    .header__container{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20vw;
+    margin-left: 5vw;
+    }
+    .container__label{background-color: gray;
+    height: 40px; width:40px;
+    border-radius: 50%;
+    }
+    .label{
+        height: 40px; width:40px;
+        object-fit: cover;
+    }
+    .header__en{font-size: 30px;
+        color: gray;}
+    .header__ru{font-size: 30px;
+        color: gray;}
+    .underheader{ height: 12vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;}
+    .underheader__name{margin-left: -3vw;
+        margin-top: 5px;
+        color: white;
+        font-family: 'Ruslan Display', bold;
+        font-size: 50px;}
+    .underheader__wrapper{width:40vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;}
+    .wrapper__button{color: grey;
+        background-color: black;
+        font-size: 25px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        border: 0px;
+    }
+    .wrapper__button:hover{color: red;
+    border-bottom: 3px red solid;}
+    .underheader__signs{display: flex;
+        flex-direction: row;
+    }
+    .signs__signin{
+        color: white;
+        font-size: 25px;
+        margin-top: 15px;}
+    .signs__signup{
+        height: 30px;width:100px;
+        background-color: red;
+        margin-top: 12px;
+        margin-left:8px;
+        border: 0px;
+        border-radius: 5vw;
+        font-size: 23px;
+        color: white;
+        }
+    .footer{ width:100vw;
+        display: flex;
+        flex-direction: row;
+        margin-left: -10px;
+    }
+    .footer__photo{width: 25vw;height:78vh;
+        overflow: hidden;
+    }
+    .footer__photo-img{width: 25vw;height:78vh;
+        object-fit: cover;
+    }
+    .absolute-wrapper-linse{z-index: 1;
+        width: 100vw;height:80vh;
+        position: absolute;
+        opacity: 0.5;
+        background-color: black;
+    }
+    .absolute-wrapper{z-index: 2;
+        width: 100vw;height:80vh;
+        position: absolute;
+    }
+    .footer__bunner{ position: relative;
+        top: 20%;left:10%;
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+    }
+    .footer__note{position: relative;
+        top: -15%;left:60%;
+        font-size: 30px;
+        color: white;
+        font-weight: 500;
+        transform: rotate(-20deg);
+        }
+    .footer__button{position: relative;
+    
+    width: 110px; height: 60px;
+    color: white;
+    border: 0px;
+    border-radius: 40px;
+    background-color: red;
+    font-size: 20px;
+    font-weight:400;
+    bottom: -40vh; left: 20%;
+    }
+
+    
+
+    
+</style> 
+</head>
+<body>
+    <div class="header">
+        <div class="header__container">
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\twitter-logo-button (1).svg"></div>
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\instagram-logo (1).svg"></div>
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\facebook-logo-button (1).svg"></div>
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\google-plus-logo-button (1).svg"></div>
+            <div class="container__label"><img class="label" src="C:\Users\zhenya\Desktop\Итоговый проект\whatsapp (1).svg"></div>
+    </div>
+       <form method="post" action="">
+        <span class="header__en">EN</span>
+            <input type="checkbox">                                <!--КАк сделать переключатель????-->
+        <span class="header__ru">RU</span>
+        </form>
+    </div>
+    <div class="underheader">
+        <span class="underheader__name">ALASKA</span>
+        <div class="underheader__wrapper">
+            <form action="C:\Users\zhenya\Desktop\Итоговый проект\Main page.html">
+            <button class="wrapper__button">Home</button>
+            </form>
+            <form action="C:\Users\zhenya\Desktop\Итоговый проект\About US.html">
+            <button class="wrapper__button">About Us</button>
+            </form>
+            <form action="C:\Users\zhenya\Desktop\Итоговый проект\Our team.html">
+            <button class="wrapper__button" type="submit">Team</button>
+            </form>
+            <form action="C:\Users\zhenya\Desktop\Итоговый проект\Catalog.html">
+            <button class="wrapper__button">Our Blog</button>
+            </form>
+            <form action="C:\Users\zhenya\Desktop\Итоговый проект\Contacts.html">
+            <button class="wrapper__button">Contacts</button>
+            </form>
+        </div>
+        <div class="underheader__signs">
+        <div class="signs__signin">Sign In</div>
+        <button class="signs__signup">Sign Up</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\2b02ba250a2ade64fbccd041454034eb.jpg"></div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\5ad83d38d6749.jpg"></div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\dc7b1b4f5c2e8c9abfc634703e0f9b51asdasdasd594492a6db6032.70423578-650x433-dc7b1b4f5c2e8c9abfc634703e0f9b51.jpg"></div>
+        <div class="footer__photo"><img class="footer__photo-img" src="C:\Users\zhenya\Desktop\Итоговый проект\orig.jpg"></div>
+            <div class="absolute-wrapper-linse"></div>
+                <div class="absolute-wrapper">
+                <div class="footer__bunner">Creative people share amazing photos</div> <!--Сделать абсолютным-->
+                <div class="footer__note">Together on Alaska</div>      <!--Сделать абсолютным-->
+                <form action="C:\Users\zhenya\Desktop\Итоговый проект\Catalog.html">
+                <button class="footer__button">Explore now</button>
+                </form>   <!--Сделать абсолютным--> 
+            </div>
+    </div>
+  
+</body>
+
+</html>
